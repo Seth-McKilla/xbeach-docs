@@ -58,14 +58,14 @@
      :advanced:
      :description:   Wave steepness criterium to reform after breaking
      :units:         -
-     :default:       0.25d0*par\%maxbrsteep
-     :range:         0.0 - 0.95d0*par\%maxbrsteep
+     :default:       0.25d0*maxbrsteep
+     :range:         0.0 - 0.95d0*maxbrsteep
    secbrsteep
      :advanced:
      :description:   Secondary maximum wave steepness criterium
      :units:         -
-     :default:       0.5d0*par\%maxbrsteep
-     :range:         0.0 - 0.95d0*par\%maxbrsteep
+     :default:       0.5d0*maxbrsteep
+     :range:         0.0 - 0.95d0*maxbrsteep
    solver
      :advanced:
      :description:   Solver used to solve the linear system

@@ -37,7 +37,7 @@
      :description:   Start time morphology, in morphological time
      :units:         s
      :default:       0.0
-     :range:         0.0 - par\%tstop
+     :range:         0.0 - tstop
    morstop
      :description:   Stop time morphology, in morphological time
      :units:         s

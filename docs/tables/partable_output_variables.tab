@@ -61,17 +61,17 @@
      :description:   Interval time of global output
      :units:         s
      :default:       1.0
-     :range:         0.01 - par\%tstop-par\%tstart
+     :range:         0.01 - tstop-tstart
    tintm
      :description:   Interval time of mean, var, max, min output
      :units:         s
-     :default:       par\%tstop-par\%tstart
-     :range:         1.0 - par\%tstop-par\%tstart
+     :default:       tstop-tstart
+     :range:         1.0 - tstop-tstart
    tintp
      :description:   Interval time of point and runup gauge output
      :units:         s
      :default:       1.0
-     :range:         0.01 - par\%tstop-par\%tstart
+     :range:         0.01 - tstop-tstart
    tsglobal
      :advanced:
      :description:   Name of file containing timings of global output
@@ -91,5 +91,5 @@
      :description:   Start time of output, in morphological time
      :units:         s
      :default:       0.0
-     :range:         0.0 - par\%tstop
+     :range:         0.0 - tstop
 

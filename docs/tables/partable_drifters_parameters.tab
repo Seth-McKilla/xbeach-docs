@@ -6,6 +6,6 @@
    ndrifter
      :description:   Number of drifers
      :units:         -
-     :default:       par\%ndrifter
+     :default:       ndrifter
      :range:         0 - 50
 

@@ -24,12 +24,12 @@
      :description:   D15 grain diameters for all sediment classses
      :units:         m
      :default:       
-     :dimensions:    par\%ngd
+     :dimensions:    ngd
    D50
      :description:   D50 grain diameters for all sediment classses
      :units:         m
      :default:       
-     :dimensions:    par\%ngd
+     :dimensions:    ngd
    D50top
      :description:   Friction coefficient flow
      :units:         -
@@ -39,7 +39,7 @@
      :description:   D90 grain diameters for all sediment classses
      :units:         m
      :default:       
-     :dimensions:    par\%ngd
+     :dimensions:    ngd
    D90top
      :description:   Friction coefficient flow
      :units:         -
@@ -129,12 +129,12 @@
      :description:   Bed sediment transport for each sediment class (excluding pores), x-component
      :units:         m2/s
      :default:       
-     :dimensions:    nx+1, ny+1, par\%ngd
+     :dimensions:    nx+1, ny+1, ngd
    Susg
      :description:   Suspended sediment transport for each sediment class (excluding pores), x-component
      :units:         m2/s
      :default:       
-     :dimensions:    nx+1, ny+1, par\%ngd
+     :dimensions:    nx+1, ny+1, ngd
    Sutot
      :description:   Sediment transport integrated over bed load and suspended and for all sediment grains, x-component
      :units:         m2/s
@@ -144,12 +144,12 @@
      :description:   Bed sediment transport for each sediment class (excluding pores), y-component
      :units:         m2/s
      :default:       
-     :dimensions:    nx+1, ny+1, par\%ngd
+     :dimensions:    nx+1, ny+1, ngd
    Svsg
      :description:   Suspended sediment transport for each sediment class (excluding pores), y-component
      :units:         m2/s
      :default:       
-     :dimensions:    nx+1, ny+1, par\%ngd
+     :dimensions:    nx+1, ny+1, ngd
    Svtot
      :description:   Sediment transport integrated over bed load and suspended and for all sediment grains, y-component
      :units:         m2/s
@@ -179,7 +179,7 @@
      :description:   Sediment response time for each sediment class
      :units:         s
      :default:       
-     :dimensions:    nx+1, ny+1, par\%ngd
+     :dimensions:    nx+1, ny+1, ngd
    alfau
      :description:   Grid orientation at u-point
      :units:         rad
@@ -229,7 +229,7 @@
      :description:   Depth-averaged suspended concentration for each sediment fraction
      :units:         m3/m3
      :default:       
-     :dimensions:    nx+1, ny+1, par\%ngd
+     :dimensions:    nx+1, ny+1, ngd
    cctot
      :description:   Sediment concentration integrated over bed load and suspended and for all sediment grains
      :units:         m3/m3
@@ -239,17 +239,17 @@
      :description:   Concentration profile
      :units:         m3/m3
      :default:       
-     :dimensions:    nx+1, ny+1, par\%nz
+     :dimensions:    nx+1, ny+1, nz
    ceqbg
      :description:   Depth-averaged bed equilibrium concentration for each sediment class
      :units:         m3/m3
      :default:       
-     :dimensions:    nx+1, ny+1, par\%ngd
+     :dimensions:    nx+1, ny+1, ngd
    ceqsg
      :description:   Depth-averaged suspended equilibrium concentration for each sediment class
      :units:         m3/m3
      :default:       
-     :dimensions:    nx+1, ny+1, par\%ngd
+     :dimensions:    nx+1, ny+1, ngd
    cf
      :description:   Friction coefficient flow
      :units:         -
@@ -374,12 +374,12 @@
      :description:   Explicit bed deposition rate per fraction
      :units:         m/s
      :default:       
-     :dimensions:    nx+1, ny+1, par\%ngd
+     :dimensions:    nx+1, ny+1, ngd
    depo_im
      :description:   Implicit bed deposition rate per fraction
      :units:         m/s
      :default:       
-     :dimensions:    nx+1, ny+1, par\%ngd
+     :dimensions:    nx+1, ny+1, ngd
    dinfil
      :description:   Infiltration layer depth used in quasi-vertical flow model for groundwater
      :units:         m
@@ -469,7 +469,7 @@
      :description:   No description
      :units:         -
      :default:       
-     :dimensions:    nx+1, ny+1, par\%nd
+     :dimensions:    nx+1, ny+1, nd
    dzbnow
      :description:   Bed level change in current time step
      :units:         m
@@ -509,7 +509,7 @@
      :description:   Bed erosion rate per fraction
      :units:         m/s
      :default:       
-     :dimensions:    nx+1, ny+1, par\%ngd
+     :dimensions:    nx+1, ny+1, ngd
    fw
      :description:   Wave friction coefficient
      :units:         -
@@ -581,7 +581,7 @@
      :default:       
      :dimensions:    nx+1, ny+1
    hhw
-     :description:   Water depth used in all wave computations, includes h*par\%delta
+     :description:   Water depth used in all wave computations, includes h*delta
      :units:         m
      :default:       
      :dimensions:    nx+1, ny+1
@@ -624,7 +624,7 @@
      :description:   Drifter x-coordinate in grid space
      :units:         -
      :default:       
-     :dimensions:    par\%ndrifter
+     :dimensions:    ndrifter
    infil
      :description:   Rate of exchange of water between surface and groundwater (positive from sea to groundwater)
      :units:         m/s
@@ -644,7 +644,7 @@
      :description:   Drifter y-coordinate in grid space
      :units:         -
      :default:       
-     :dimensions:    par\%ndrifter
+     :dimensions:    ndrifter
    k
      :description:   Wave number
      :units:         rad/m
@@ -694,17 +694,17 @@
      :description:   Turbulence viscosity
      :units:         -
      :default:       
-     :dimensions:    nx+1, ny+1, par\%nz
+     :dimensions:    nx+1, ny+1, nz
    pbbed
      :description:   No description
      :units:         -
      :default:       
-     :dimensions:    nx+1, ny+1, par\%nd, par\%ngd
+     :dimensions:    nx+1, ny+1, nd, ngd
    pdisch
      :description:   Discharge locations
      :units:         -
      :default:       
-     :dimensions:    par\%ndischarge, 4
+     :dimensions:    ndischarge, 4
    ph
      :description:   Pressure head due to ship
      :units:         m
@@ -714,7 +714,7 @@
      :description:   Point discharge locations (no momentum)
      :units:         -
      :default:       
-     :dimensions:    par\%ndischarge
+     :dimensions:    ndischarge
    pres
      :description:   Normalized dynamic pressure
      :units:         m2/s2
@@ -724,7 +724,7 @@
      :description:   Discharges
      :units:         m2/s
      :default:       
-     :dimensions:    par\%ntdischarge, par\%ndischarge
+     :dimensions:    ntdischarge, ndischarge
    qx
      :description:   Discharge in u-points, x-component
      :units:         m2/s
@@ -764,7 +764,7 @@
      :description:   Equilibrium sediment concentartion factor for each sediment class
      :units:         -
      :default:       
-     :dimensions:    par\%ngd
+     :dimensions:    ngd
    sedero
      :description:   Cum. sedimentation/erosion
      :units:         m
@@ -774,67 +774,67 @@
      :description:   Prescribed bed levels
      :units:         m
      :default:       
-     :dimensions:    nx+1, ny+1, par\%nsetbathy
+     :dimensions:    nx+1, ny+1, nsetbathy
    shipFx
      :description:   Force on ship in x-direction
      :units:         N
      :default:       
-     :dimensions:    par\%nship
+     :dimensions:    nship
    shipFy
      :description:   Force on ship in y-direction
      :units:         N
      :default:       
-     :dimensions:    par\%nship
+     :dimensions:    nship
    shipFz
      :description:   Force on ship in z-direction
      :units:         N
      :default:       
-     :dimensions:    par\%nship
+     :dimensions:    nship
    shipMx
      :description:   Moment on ship around x-axis
      :units:         Nm
      :default:       
-     :dimensions:    par\%nship
+     :dimensions:    nship
    shipMy
      :description:   Moment on ship around y-axis
      :units:         Nm
      :default:       
-     :dimensions:    par\%nship
+     :dimensions:    nship
    shipMz
      :description:   Moment on ship around z-axis
      :units:         Nm
      :default:       
-     :dimensions:    par\%nship
+     :dimensions:    nship
    shipchi
      :description:   Turning angle arround y-axis
      :units:         deg
      :default:       
-     :dimensions:    par\%nship
+     :dimensions:    nship
    shipphi
      :description:   Turning angle arround x-axis
      :units:         deg
      :default:       
-     :dimensions:    par\%nship
+     :dimensions:    nship
    shippsi
      :description:   Turning angle arround z-axis
      :units:         deg
      :default:       
-     :dimensions:    par\%nship
+     :dimensions:    nship
    shipxCG
      :description:   X-coordinate of ship center of gravity
      :units:         m
      :default:       
-     :dimensions:    par\%nship
+     :dimensions:    nship
    shipyCG
      :description:   Y-coordinate of ship center of gravity
      :units:         m
      :default:       
-     :dimensions:    par\%nship
+     :dimensions:    nship
    shipzCG
      :description:   Z-coordinate of ship center of gravity
      :units:         m
      :default:       
-     :dimensions:    par\%nship
+     :dimensions:    nship
    shobs
      :description:   Beachwizard observed shoreline
      :units:         m
@@ -859,7 +859,7 @@
      :description:   Vertical distribution of sigma layers q3d
      :units:         -
      :default:       
-     :dimensions:    par\%nz
+     :dimensions:    nz
    sinth
      :description:   Sin of wave angles relative to grid direction
      :units:         -
@@ -904,17 +904,17 @@
      :description:   Discharge time series
      :units:         -
      :default:       
-     :dimensions:    par\%ntdischarge
+     :dimensions:    ntdischarge
    tdriftb
      :description:   Drifter release time
      :units:         s
      :default:       
-     :dimensions:    par\%ndrifter
+     :dimensions:    ndrifter
    tdrifte
      :description:   Drifter retrieval time
      :units:         s
      :default:       
-     :dimensions:    par\%ndrifter
+     :dimensions:    ndrifter
    thet
      :description:   Wave angles
      :units:         rad
@@ -949,12 +949,12 @@
      :description:   Input tidal signal
      :units:         m
      :default:       
-     :dimensions:    tidelen, par\%tideloc
+     :dimensions:    tidelen, tideloc
    tsetbathy
      :description:   Points in time of prescibed bed levels
      :units:         s
      :default:       
-     :dimensions:    par\%nsetbathy
+     :dimensions:    nsetbathy
    u
      :description:   Glm velocity in cell centre, x-component
      :units:         m/s
@@ -969,7 +969,7 @@
      :description:   Calibration factor for u critical for each sediment class
      :units:         -
      :default:       
-     :dimensions:    par\%ngd
+     :dimensions:    ngd
    ududx
      :description:   Advection
      :units:         m2/s2
@@ -1049,7 +1049,7 @@
      :description:   Stokes velocity (q3d)
      :units:         -
      :default:       
-     :dimensions:    nx+1, ny+1, par\%nz
+     :dimensions:    nx+1, ny+1, nz
    uu
      :description:   Glm velocity in u-points, x-component
      :units:         m/s
@@ -1079,7 +1079,7 @@
      :description:   Velocity (q3d) ksi-comp
      :units:         -
      :default:       
-     :dimensions:    nx+1, ny+1, par\%nz
+     :dimensions:    nx+1, ny+1, nz
    v
      :description:   Glm velocity in cell centre, y-component
      :units:         m/s
@@ -1204,7 +1204,7 @@
      :description:   Velocity (q3d) eta-comp
      :units:         -
      :default:       
-     :dimensions:    nx+1, ny+1, par\%nz
+     :dimensions:    nx+1, ny+1, nz
    wb
      :description:   Vertical velocity at the bottom
      :units:         m/s

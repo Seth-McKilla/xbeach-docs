@@ -356,19 +356,19 @@
      :advanced:
      :description:   Thickness of top sediment class layers
      :units:         m
-     :default:       par\%dzg1
+     :default:       dzg1
      :range:         0.01 - 1.0
    dzg2
      :advanced:
      :description:   Nominal thickness of variable sediment class layer
      :units:         m
-     :default:       par\%dzg1
+     :default:       dzg1
      :range:         0.01 - 1.0
    dzg3
      :advanced:
      :description:   Thickness of bottom sediment class layers
      :units:         m
-     :default:       par\%dzg1
+     :default:       dzg1
      :range:         0.01 - 1.0
    dzmax
      :advanced:
@@ -749,7 +749,7 @@
      :description:   Start time morphology, in morphological time
      :units:         s
      :default:       0.0
-     :range:         0.0 - par\%tstop
+     :range:         0.0 - tstop
    morstop
      :description:   Stop time morphology, in morphological time
      :units:         s
@@ -771,8 +771,8 @@
      :advanced,silent:
      :description:   Smoothing distance for estimating umean (defined as nr of cells)
      :units:         -
-     :default:       par\%ny+1
-     :range:         1 - par\%ny+1
+     :default:       ny+1
+     :range:         1 - ny+1
    ncfilename
      :advanced:
      :description:   Xbeach netcdf output file name
@@ -788,17 +788,17 @@
      :description:   Index of layer with variable thickness
      :units:         -
      :default:       2
-     :range:         1 - par\%nd
+     :range:         1 - nd
    ndischarge
      :advanced:
      :description:   Number of discharge locations
      :units:         -
-     :default:       par\%ndischarge
+     :default:       ndischarge
      :range:         0 - 100
    ndrifter
      :description:   Number of drifers
      :units:         -
-     :default:       par\%ndrifter
+     :default:       ndrifter
      :range:         0 - 50
    ne_layer
      :description:   Name of file containing thickness of the erodible layer
@@ -897,7 +897,7 @@
      :description:   Number of input spectrum locations
      :units:         -
      :default:       1
-     :range:         1 - par\%ny+1
+     :range:         1 - ny+1
    nspr
      :advanced,silent:
      :description:   Switch to enable long wave direction forced into centres of short wave bins
@@ -908,7 +908,7 @@
      :advanced:
      :description:   Length of discharge time series
      :units:         -
-     :default:       par\%ntdischarge
+     :default:       ntdischarge
      :range:         0 - 100
    nuh
      :description:   Horizontal background viscosity
@@ -1022,8 +1022,8 @@
      :advanced:
      :description:   Wave steepness criterium to reform after breaking
      :units:         -
-     :default:       0.25d0*par\%maxbrsteep
-     :range:         0.0 - 0.95d0*par\%maxbrsteep
+     :default:       0.25d0*maxbrsteep
+     :range:         0.0 - 0.95d0*maxbrsteep
    remdryoutput
      :description:   Remove dry output points from output data of zs etc.
      :units:         -
@@ -1036,7 +1036,7 @@
      :range:         0.0 - 45.0
    rfb
      :advanced:
-     :description:   Switch to feed back maximum wave surface slope in roller energy balance, otherwise rfb = par\%beta
+     :description:   Switch to feed back maximum wave surface slope in roller energy balance, otherwise rfb = beta
      :units:         -
      :default:       0
      :range:         0 - 1
@@ -1084,7 +1084,7 @@
    rt
      :description:   Duration of wave spectrum at offshore boundary, in morphological time
      :units:         s
-     :default:       min(3600.d0,par\%tstop)
+     :default:       min(3600.d0,tstop)
      :range:         1200.0 - 7200.0
    rwave
      :advanced,silent:
@@ -1102,8 +1102,8 @@
      :advanced:
      :description:   Secondary maximum wave steepness criterium
      :units:         -
-     :default:       0.5d0*par\%maxbrsteep
-     :range:         0.0 - 0.95d0*par\%maxbrsteep
+     :default:       0.5d0*maxbrsteep
+     :range:         0.0 - 0.95d0*maxbrsteep
    secorder
      :advanced:
      :description:   Use second order corrections to advection/non-linear terms based on maccormack scheme
@@ -1304,24 +1304,24 @@
      :description:   Interval time of global output
      :units:         s
      :default:       1.0
-     :range:         0.01 - par\%tstop-par\%tstart
+     :range:         0.01 - tstop-tstart
    tintm
      :description:   Interval time of mean, var, max, min output
      :units:         s
-     :default:       par\%tstop-par\%tstart
-     :range:         1.0 - par\%tstop-par\%tstart
+     :default:       tstop-tstart
+     :range:         1.0 - tstop-tstart
    tintp
      :description:   Interval time of point and runup gauge output
      :units:         s
      :default:       1.0
-     :range:         0.01 - par\%tstop-par\%tstart
+     :range:         0.01 - tstop-tstart
    tnext
      :description:   Next time point for output or wave stationary calculation, in hydrodynamic time
      :units:         s
      :default:       -123
    trepfac
      :advanced:
-     :description:   Compute mean wave period over energy band: par\%trepfac*maxval(sf) for instat jons, swan or vardens; converges to tm01 for trepfac = 0.0 and
+     :description:   Compute mean wave period over energy band: trepfac*maxval(sf) for instat jons, swan or vardens; converges to tm01 for trepfac = 0.0 and
      :units:         -
      :default:       0.01
      :range:         0.0 - 1.0
@@ -1350,7 +1350,7 @@
      :description:   Start time of output, in morphological time
      :units:         s
      :default:       0.0
-     :range:         0.0 - par\%tstop
+     :range:         0.0 - tstop
    tstop
      :required:
      :description:   Stop time of simulation, in morphological time
